@@ -1,4 +1,6 @@
 # Notification Service
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A robust, scalable notification service for sending emails, SMS, and push notifications to users through a unified API.
 
 ## Overview
