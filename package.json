@@ -1,0 +1,30 @@
+{
+  "name": "notification-service",
+  "version": "1.0.0",
+  "description": "A microservice for handling various types of notifications",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "start:workers": "node src/workers/index.js",
+    "start:all": "concurrently \"npm run dev\" \"npm run start:workers\""
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.5",
+    "bullmq": "^4.6.0",
+    "concurrently": "^7.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "joi": "^17.9.2",
+    "mongoose": "^7.5.0",
+    "nodemailer": "^6.10.1",
+    "twilio": "^4.15.0",
+    "winston": "^3.10.0"
+  },
+  "devDependencies": {
+    "jest": "^29.6.4",
+    "nodemon": "^3.0.1"
+  }
+}
